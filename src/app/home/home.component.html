@@ -1,0 +1,10 @@
+<div class="container">
+  <input type="text" name="item" [(ngModel)]="twoBinding">
+  <input type="submit" (click)='addItem()'>
+  <span> goals list: {{itemCount}}</span>
+  <span></span>
+  <div *ngFor="let goal of goals" >
+    {{goal}}
+  </div>
+</div>
+
